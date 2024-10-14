@@ -1,0 +1,153 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.header-btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.header-btn:hover {
+  background-color: darkgray;
+}
+
+/* Form Styles */
+form {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form title */
+h1 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Input, Select, Textarea styling */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+/* Current Location box */
+.location-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  color: black;
+  text-align: left;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+button[type="button"] {
+  background-color: grey;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: darkgray;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Button container - Aligning buttons horizontally */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  form {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .header-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* AI Button - Disabled look */
+button[type="button"]:disabled {
+  background-color: lightgrey;
+  color: #999;
+  cursor: not-allowed;
+}
+
+/* Subtle hover effect for header buttons */
+.header-btn:hover {
+  background-color: darkgrey;
+  color: white;
+}
